@@ -1,3 +1,6 @@
+#ifndef TYPES_H
+#define TYPES_H
+
 #include <stdint.h>
 
 // Unsigned Integer Types
@@ -44,3 +47,5 @@ typedef u8 b8;
 #define MIN_I16 -32768
 #define MIN_I32 -2147483648
 #define MIN_I64 -9223372036854775808
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef STRINGC_H
+#define STRINGC_H
+
 #include "types.h"
 
 typedef struct {
@@ -11,3 +14,5 @@ String newString(char* chars);
 // Printing
 void printString(String string);
 void printStringLn(String string);
+
+#endif

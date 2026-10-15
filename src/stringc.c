@@ -1,4 +1,5 @@
-#include "string.h"
+#include "stringc.h"
+#include "types.h"
 
 #include <stdio.h>
 

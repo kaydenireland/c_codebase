@@ -1,5 +1,6 @@
 #include "types.h"
-#include "string.h"
+#include "stringc.h"
+#include "os.h"
 
 #include <assert.h>
 #include <stdint.h>
@@ -12,7 +13,9 @@ int main(void) {
     assert(byte == 0xFF);
 
     String hello = newString("Hello, World!");
-    printf("Length of hello is %d", hello.length);
+    printf("Length of hello is %d\n", hello.length);
+
+    printf("Current OS: %d", getOS());
 
     return 0;
 }

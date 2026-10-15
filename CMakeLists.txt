@@ -8,7 +8,8 @@ project(
 set(CMAKE_C_STANDARD 17)
 
 add_library(c_codebase
-        src/string.c
+        src/stringc.c
+        src/os.c
 )
 
 target_include_directories(c_codebase
