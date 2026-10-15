@@ -22,16 +22,16 @@ target_compile_features(c_codebase PUBLIC c_std_17)
 include(CTest)
 
 if(BUILD_TESTING)
-    add_executable(test_types
-            tests/types.c
+    add_executable(main_test
+            tests/main.c
     )
 
-    target_link_libraries(test_types
+    target_link_libraries(main_test
             PRIVATE c_codebase
     )
 
     add_test(
-            NAME types
-            COMMAND test_types
+            NAME main
+            COMMAND main_test
     )
 endif()
